@@ -1,11 +1,9 @@
-pip
 streamlit 
 langchain 
 openai 
 wikipedia 
 chromadb 
 tiktoken 
-llama-cpp-python 
 huggingface_hub 
 ctransformers
 pypdf2 
