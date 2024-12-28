@@ -45,8 +45,10 @@ footer .stMetrics {display: none;}  /* Hide the Streamlit logo */
 """
 # Inject custom CSS
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
  
-hugging_face_token = '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'
+hugging_face_token = st.secrets["hugging_face_token"]
 os.environ['HUGGINGFACEHUB_API_TOKEN'] = hugging_face_token
  
 def load_llm():
