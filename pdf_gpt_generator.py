@@ -27,8 +27,7 @@ from langchain.prompts import PromptTemplate
 from langchain_core.messages import HumanMessage, AIMessage  # Import from langchain_core
 
 st.set_page_config(
-    page_title="PDF-Q-and-A-ChatBot
-",
+    page_title="PDF-Q-and-A-ChatBot",
     page_icon="📚"
 )
 
