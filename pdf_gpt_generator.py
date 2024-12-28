@@ -25,6 +25,26 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.prompts import PromptTemplate
 from langchain_core.messages import HumanMessage, AIMessage  # Import from langchain_core
+
+st.set_page_config(
+    page_title="PDF-Q-and-A-ChatBot
+",
+    page_icon="📚"
+)
+
+# Custom CSS to hide Streamlit icon, GitHub, and Fork icons
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+.stApp {padding-top: 0;}
+footer .stButton {display: none;}  /* Hide the Streamlit logo */
+footer .stMetrics {display: none;}  /* Hide the Streamlit logo */
+</style>
+"""
+# Inject custom CSS
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
  
 hugging_face_token = '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'
 os.environ['HUGGINGFACEHUB_API_TOKEN'] = hugging_face_token
